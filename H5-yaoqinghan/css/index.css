@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+/* index 开始 */
+.index .cAni{
+	height: 100%;
+}
+.con .cAni .show{
+	height: 100%;
+	-webkit-perspective: 4rem;
+			perspective: 4rem;
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+.con .cAni .show .box{
+	-webkit-transform: translateZ(2.5rem);
+			transform: translateZ(2.5rem);
+	-webkit-animation-duration: 1.2s;
+			animation-duration: 1.2s;
+	-webkit-animation-delay: .4s;
+			animation-delay: .4s;
+	-webkit-animation-timing-function: cubic-bezier(0.27, 0.65, 0.49, 1.01);
+			animation-timing-function: cubic-bezier(0.27, 0.65, 0.49, 1.01);
+}
+.index .cAni .show .box{
+	position: absolute;
+	left: .5rem;
+	right: .5rem;
+	top: .4rem;
+	bottom: .4rem;
+	margin: auto;
+	background: url('../images/indexBoxBg.png') no-repeat center;
+	-webkit-background-size: 100% 100%;
+			background-size: 100% 100%;
+}
+.index .cAni .show .box .top{
+	margin-top: .5rem;
+	text-align: center;
+}
+.index .cAni .show .box .top *{
+	-webkit-animation-duration: .8s;
+			animation-duration: .8s;
+	-webkit-transform: scale(2,2) translate(0,-1rem) rotateY(0);
+			transform: scale(2,2) translate(0,-1rem) rotateY(0);
+	-webkit-animation-timing-function: cubic-bezier(0.27, 0.65, 0.49, 1.01);
+			animation-timing-function: cubic-bezier(0.27, 0.65, 0.49, 1.01);
+}
+.index .cAni .show .box .top h5{
+	font-size: .3rem;
+	font-family: "黑体";
+	color: #fff;
+}
+.index .cAni .show .box .top h6{
+	color: #fff;
+	font-size: .16rem;
+	margin-bottom: .15rem;
+}
+
+.index .cAni .show .box .top .a{
+	-webkit-animation-delay: 1.4s;
+			animation-delay: 1.4s;
+}
+.index .cAni .show .box .top .b{
+	-webkit-animation-delay: 1.6s;
+			animation-delay: 1.6s;
+}
+.index .cAni .show .box .c{
+	width: 4.49rem;
+	margin: .3rem auto 0;
+	-webkit-perspective: 4rem;
+			perspective: 4rem;
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+.index .cAni .show .box .c div{
+	height: 2.48rem;
+	background: url('../images/indexMain.png') no-repeat center;
+	-webkit-background-size: 100% 100%;
+			background-size: 100% 100%;
+	-webkit-transform: translateZ(2rem);
+			transform: translateZ(2rem);
+	-webkit-animation-duration: 1.2s;
+			animation-duration: 1.2s;
+	-webkit-animation-delay: 1.8s;
+			animation-delay: 1.8s;
+	-webkit-animation-timing-function: cubic-bezier(0.59, 0.1, 1, 1);
+			animation-timing-function: cubic-bezier(0.59, 0.1, 1, 1);
+}
+.index .cAni .show .box .bottom{
+	position: absolute;
+	bottom: 1rem;
+	left: .5rem;
+	right: .5rem;
+	margin: auto;
+	border: .05rem solid #fff;
+	-webkit-transform: scale(1,1) translate(0,0) rotateY(270deg);
+			transform: scale(1,1) translate(0,0) rotateY(270deg);
+	-webkit-animation-duration: .8s;
+			animation-duration: .8s;
+	-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+}
+.index .cAni .show .box .bottom div{
+	font-size: .24rem;
+	text-align: center;
+	color: #fff;
+	line-height: .5rem;
+}
+.index .cAni .show .box .bottom div:nth-of-type(1){
+	border-bottom: .05rem solid #fff;
+}
+
+
+.second .cAni .show{
+	-webkit-animation-duration: 1.2s;
+			animation-duration: 1.2s;
+	-webkit-animation-delay: .6s;
+			animation-delay: .6s;
+}
+
+.conT .cAni .show .top{
+	background: url('../images/border1.png') no-repeat center;
+	-webkit-background-size: 100% 100%;
+			background-size: 100% 100%;
+	width: 5rem;
+	height: .95rem;
+	margin: auto;
+	margin-top: .8rem;
+	text-align: center;
+	padding-top: .05rem;
+	-webkit-transform: scale(1.1,1.1) translate(-5rem,0) rotateY(0);
+			transform: scale(1.1,1.1) translate(-5rem,0) rotateY(0);
+	-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+	-webkit-animation-delay: .8s;
+			animation-delay: .8s;
+}
+.conT .cAni .show .top h5{
+	font-size: .32rem;
+	color: #fff;
+	line-height: .5rem;
+}
+.conT .cAni .show .top h6{
+	line-height: .3rem;
+	font-size: .26rem;
+	color: #fff;
+}
+.second .cAni .show .bottom{
+	/* border: .05rem solid #fff; */
+	background: url('../images/border2.png') no-repeat center;
+	-webkit-background-size: 100% 100%;
+			background-size: 100% 100%;
+	width: 4.9rem;
+	margin: auto;
+	margin-top: .5rem;
+	width: 4.2rem;
+	padding: .3rem .4rem;
+	-webkit-transform: scale(1.1,1.1) translate(5rem,0) rotateY(0);
+			transform: scale(1.1,1.1) translate(5rem,0) rotateY(0);
+	-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+	-webkit-animation-delay: 1s;
+			animation-delay: 1s;
+}
+.second .cAni .show .bottom p{
+	text-align: justify;
+	text-indent: 2em;
+	color: #fff;
+	line-height: .5rem;
+	font-size: .26rem;
+	padding: .1rem 0 .2rem;
+}
+
+.third .cAni .show .bottom{
+	width: 5rem;
+	margin: .5rem auto 0;
+	height: 0;
+	overflow: hidden;
+	-webkit-transform-origin: center 0;
+			transform-origin: center 0;
+	-webkit-animation-duration: 1.2s;
+			animation-duration: 1.2s;
+	-webkit-animation-delay: 1.4s;
+			animation-delay: 1.4s;
+	-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+}
+.third.action .cAni .show .bottom{
+	-webkit-animation-name: thirdAni;
+			animation-name: thirdAni;
+}
+@-webkit-keyframes thirdAni{
+	100%{
+		height: 5.45rem;
+	}
+}
+@keyframes thirdAni{
+	100%{
+		height: 5.45rem;
+	}
+}
+
+.third .cAni .show .bottom ul{
+	position: relative;
+	margin-left: .1rem;
+	border-left: .05rem solid #fff;
+	padding: .1rem 0 .1rem .3rem;
+}
+.third .cAni .show .bottom ul li{
+	font-size: .26rem;
+	color: #FFF;
+	width: 4.5rem;
+	border-bottom: dashed .02rem #fff;
+	line-height: .3rem;
+	text-indent: 1.3rem;
+	margin-top: .7rem;
+	position: relative;
+	-webkit-transform: scale(1,1) translate(5rem,0) rotateY(0);
+			transform: scale(1,1) translate(5rem,0) rotateY(0);
+	-webkit-animation-duration: .8s;
+			animation-duration: .8s;
+}
+.third .cAni .show .bottom ul li:nth-of-type(1){
+	margin-top: 0;
+	-webkit-animation-delay: 1s;
+			animation-delay: 1s;
+}
+.third .cAni .show .bottom ul li:nth-of-type(2){
+	-webkit-animation-delay: 1.2s;
+			animation-delay: 1.2s;
+}
+.third .cAni .show .bottom ul li:nth-of-type(3){
+	-webkit-animation-delay: 1.4s;
+			animation-delay: 1.4s;
+}
+.third .cAni .show .bottom ul li:nth-of-type(4){
+	-webkit-animation-delay: 1.6s;
+			animation-delay: 1.6s;
+}
+.third .cAni .show .bottom ul li:nth-of-type(5){
+	-webkit-animation-delay: 1.8s;
+			animation-delay: 1.8s;
+}
+.third .cAni .show .bottom ul li:nth-of-type(6){
+	-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+}
+.third .cAni .show .bottom ul li::before{
+	content: "";
+	position: absolute;
+	left: -.42rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: .2rem;
+	height: .2rem;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.fourth .cAni .show .bottom{
+	margin: .5rem 0 0 .7rem;
+	position: relative;
+	height: 0;
+	-webkit-transform-origin: center 0;
+			transform-origin: center 0;
+	-webkit-animation-duration: 1.4s;
+			animation-duration: 1.4s;
+	-webkit-animation-delay: 1.6s;
+			animation-delay: 1.6s;
+	-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+}
+.fourth .cAni .show .bottom::before{
+	content: "";
+	position: absolute;
+	left: 1.5rem;
+	width: .05rem;
+	height: 100%;
+	top: 0;
+	background-color: #fff;
+}
+.fourth.action .cAni .show .bottom{
+	-webkit-animation-name: fourthAni;
+			animation-name: fourthAni;
+}
+@-webkit-keyframes fourthAni{
+	100%{
+		height: 5.6rem;
+	}
+}
+@keyframes fourthAni{
+	100%{
+		height: 5.6rem;
+	}
+}
+.fourth .cAni .show .bottom ul li h5,
+.fourth .cAni .show .bottom ul li h6{
+	font-size: .24rem;
+	color: #fff;
+	line-height: .7rem;
+	-webkit-box-flex: 0;
+	-webkit-flex-shrink: 0;
+	flex-shrink: 0;
+	-webkit-animation-duration: .8s;
+			animation-duration: .8s;
+	-webkit-animation-timing-function: cubic-bezier(0.43, 0.86, 0.74, 1.12);
+			animation-timing-function: cubic-bezier(0.43, 0.86, 0.74, 1.12);
+}
+.fourth .cAni .show .bottom ul li h5{
+	margin-right: .15rem;
+	width: 1.5rem;
+	-webkit-transform: scale(1,1) translate(-5rem,0) rotateY(0);
+			transform: scale(1,1) translate(-5rem,0) rotateY(0);
+}
+.fourth .cAni .show .bottom ul li h6{
+	-webkit-transform: scale(1,1) translate(5rem,0) rotateY(0);
+			transform: scale(1,1) translate(5rem,0) rotateY(0);
+}
+
+.fourth .cAni .show .bottom ul li:nth-of-type(1) *{
+	-webkit-animation-delay: 1s;
+			animation-delay: 1s;
+}
+.fourth .cAni .show .bottom ul li:nth-of-type(2) *{
+	-webkit-animation-delay: 1.2s;
+			animation-delay: 1.2s;
+}
+.fourth .cAni .show .bottom ul li:nth-of-type(3) *{
+	-webkit-animation-delay: 1.4s;
+			animation-delay: 1.4s;
+}
+.fourth .cAni .show .bottom ul li:nth-of-type(4) *{
+	-webkit-animation-delay: 1.6s;
+			animation-delay: 1.6s;
+}
+.fourth .cAni .show .bottom ul li:nth-of-type(5) *{
+	-webkit-animation-delay: 1.8s;
+			animation-delay: 1.8s;
+}
+.fourth .cAni .show .bottom ul li:nth-of-type(6) *{
+	-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+}
+.fourth .cAni .show .bottom ul li:nth-of-type(7) *{
+	-webkit-animation-delay: 2.2s;
+			animation-delay: 2.2s;
+}
+.fourth .cAni .show .bottom ul li:nth-of-type(8) *{
+	-webkit-animation-delay: 2.4s;
+			animation-delay: 2.4s;
+}
+.fourth .cAni .show .bottom ul li:nth-of-type(9) *{
+	-webkit-animation-delay: 2.6s;
+			animation-delay: 2.6s;
+}
+
+
+.fifth .cAni .show .bottom{
+	width: 5rem;
+	margin: .9rem auto;
+}
+.fifth .cAni .show .bottom h5,
+.fifth .cAni .show .bottom h6{
+	font-size: .26rem;
+	color: #fff;
+	line-height: .42rem;
+	-webkit-animation-duration: .8s;
+			animation-duration: .8s;
+}
+.fifth .cAni .show .bottom h6{
+	padding-left: .78rem;
+	margin-bottom: .4rem;
+}
+.fifth .cAni .show .bottom a{
+	width: 2.6rem;
+	line-height: .7rem;
+	background-color: #fff;
+	text-align: center;
+	font-size: .26rem;
+	margin: 1.7rem auto 0;
+	border-radius: .06rem;
+	-webkit-transform: scale(2,2) translate(0,0) rotateY(0);
+			transform: scale(2,2) translate(0,0) rotateY(0);
+	-webkit-animation-delay: 1.8s;
+			animation-delay: 1.8s;
+	-webkit-animation-duration: .6s;
+			animation-duration: .6s;
+	-webkit-animation-timing-function: cubic-bezier(0.63, 0.06, 0.68, 1.13);
+			animation-timing-function: cubic-bezier(0.63, 0.06, 0.68, 1.13);
+}
+.fifth .cAni .show .bottom .a{
+	-webkit-transform: scale(1,1) translate(5rem,0) rotateY(0);
+			transform: scale(1,1) translate(5rem,0) rotateY(0);
+	-webkit-animation-delay: 1.2s;
+			animation-delay: 1.2s;
+}
+.fifth .cAni .show .bottom .b{
+	-webkit-transform: scale(1,1) translate(-5rem,0) rotateY(0);
+			transform: scale(1,1) translate(-5rem,0) rotateY(0);
+	-webkit-animation-delay: 1.4s;
+			animation-delay: 1.4s;
+}
+.fifth .cAni .show .bottom .c{
+	-webkit-transform: scale(1,1) translate(5rem,0) rotateY(0);
+			transform: scale(1,1) translate(5rem,0) rotateY(0);
+	-webkit-animation-delay: 1.6s;
+			animation-delay: 1.6s;
+}

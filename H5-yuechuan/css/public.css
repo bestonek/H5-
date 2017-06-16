@@ -1,0 +1,650 @@
+@charset "utf-8";
+
+/* 雪碧图 */
+.sList01{
+	background-image: url('../images/sList01.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: 1.36rem auto;
+			background-size: 1.36rem auto;
+}
+
+/* 背景音乐 */
+	#music{
+		position: absolute;
+		width: .4rem;
+		height: .4rem;
+		right: .2rem;
+		top: .3rem;
+		z-index: 6666;
+		display: none;
+		background: url('../images/music.svg') no-repeat center;
+		-webkit-background-size: 100% 100%;
+				background-size: 100% 100%;
+		-webkit-animation-name: aniMusic;
+				animation-name: aniMusic;
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-duration: 1.6s;
+				animation-duration: 1.6s;
+		-webkit-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+	}
+	@-webkit-keyframes aniMusic{
+		100%{
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	@keyframes aniMusic{
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+
+/* 入场动画 */
+	section.content{
+		position: fixed;
+	}
+	.content,
+	.content>section,
+	.content .start .box>div,
+	.content .conBox .con{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.content .start{
+		z-index: 19;
+	}
+	.content .start .box>div.left,
+	.content .start .box>div.right,
+	.content .start .box>div.bottom{
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+	}
+
+	/* 左 */
+	.content .start .box>div{
+		background-color: rgba(255, 255, 255, .7);
+	}
+	.content .start .box>div.left{
+		-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+		-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+	}
+	.content .start.action .box>div.left{
+		-webkit-animation-name: startLeft;
+				animation-name: startLeft;
+	}
+	@-webkit-keyframes startLeft{
+		45%{
+			-webkit-transform: translateX(-50%);
+			opacity: .7;
+		}
+		100%{
+			-webkit-transform: translateX(0);
+			opacity: 0;
+		}
+	}
+	@keyframes startLeft{
+		45%{
+			transform: translateX(-50%);
+			opacity: .7;
+		}
+		100%{
+			transform: translateX(0);
+			opacity: 0;
+		}
+	}
+
+	/* 右 */
+	.content .start .box>div.right{
+		-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+		-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+	}
+	.content .start.action .box>div.right{
+		-webkit-animation-name: startRight;
+				animation-name: startRight;
+	}
+	@-webkit-keyframes startRight{
+		45%{
+			-webkit-transform: translateX(50%);
+			opacity: .7;
+		}
+		100%{
+			-webkit-transform: translateX(0);
+			opacity: 0;
+		}
+	}
+	@keyframes startRight{
+		45%{
+			transform: translateX(50%);
+			opacity: .7;
+		}
+		100%{
+			transform: translateX(0);
+			opacity: 0;
+		}
+	}
+
+	/* 下 */
+	.content .start.action.up .box>div.bottom{
+		-webkit-animation-name: startBottomUp;
+				animation-name: startBottomUp;
+		-webkit-transform: translateY(100%);
+				transform: translateY(100%);
+		-webkit-animation-duration: 1.8s;
+				animation-duration: 1.8s;
+	}
+	.content .start.action.down .box>div.bottom{
+		-webkit-animation-name: startBottomDown;
+				animation-name: startBottomDown;
+		-webkit-transform: translateY(-100%);
+				transform: translateY(-100%);
+		-webkit-animation-duration: 1.4s;
+				animation-duration: 1.4s;
+	}
+	@-webkit-keyframes startBottomUp{
+		25%{
+			-webkit-transform: translateY(15%);
+			opacity: .8;
+		}
+		60%{
+			-webkit-transform: translateY(100%);
+			opacity: 0;
+		}
+		100%{
+			-webkit-transform: translateY(100%);
+			opacity: 0;
+		}
+	}
+	@keyframes startBottomUp{
+		25%{
+			transform: translateY(15%);
+			opacity: .8;
+		}
+		60%{
+			transform: translateY(100%);
+			opacity: 0;
+		}
+		100%{
+			transform: translateY(100%);
+			opacity: 0;
+		}
+	}
+	@-webkit-keyframes startBottomDown{
+		32%{
+			-webkit-transform: translateY(-80%);
+			opacity: 1;
+		}
+		70%{
+			-webkit-transform: translateY(0);
+			opacity: 0;
+		}
+		100%{
+			-webkit-transform: translateY(0);
+			opacity: 0;
+		}
+	}
+	@keyframes startBottomDown{
+		32%{
+			transform: translateY(-80%);
+			opacity: 1;
+		}
+		70%{
+			transform: translateY(0);
+			opacity: 0;
+		}
+		100%{
+			transform: translateY(0);
+			opacity: 0;
+		}
+	}
+
+/* con背景 */
+	.content .conBox .con{
+		background-position: center;
+		-webkit-background-size: 100% 100%;
+				background-size: 100% 100%;
+		background-repeat: no-repeat;
+		opacity: 0;
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+		-webkit-animation-duration: 1.2s;
+				animation-duration: 1.2s;
+	}
+	
+	body{
+		background-color: #162463;
+	}
+	.content .conBox .index{
+		background-image: url('../images/indexBg.jpg');
+	}
+	.content .conBox .public{
+		background-image: url('../images/publicBg.jpg');
+	}
+	.content .conBox .oTs{
+		background-image: url('../images/oTsBg.png'),url('../images/publicBg.jpg');
+		background-position: center 6.7rem,center;
+		-webkit-background-size: 100% auto,100% 100%;
+				background-size: 100% auto,100% 100%;
+	}
+	.content .conBox .conForm{
+		background-image: url('../images/formBg.jpg');
+	}
+	.content .conBox .last{
+		background-image: url('../images/lastBg.jpg');
+	}
+
+	.content .conBox .con.action{
+		-webkit-animation-name: conBox;
+				animation-name: conBox;
+	}
+	@-webkit-keyframes conBox{
+		80%{
+			opacity: .65;
+			z-index: 0;
+		}
+		100%{
+			opacity: 1;
+			z-index: 20;
+		}
+	}
+	@keyframes conBox{
+		80%{
+			opacity: .65;
+			z-index: 0;
+		}
+		100%{
+			opacity: 1;
+			z-index: 20;
+		}
+	}
+
+/* 滑动提示 */
+	.content .conBox .con .bSlide{
+		position: absolute;
+		bottom: .15rem;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: .54rem;
+		z-index: 999;
+	}
+	.content .conBox .con .bSlide .ani .show{
+		height: .45rem;
+		-webkit-transform-origin: center 100%;
+				transform-origin: center 100%;
+		-webkit-animation-delay: 1.2s;
+				animation-delay: 1.2s;
+		-webkit-animation-duration: 1.6s;
+				animation-duration: 1.6s;
+		-webkit-transform: scale(1,1) translate(0,2rem) rotateY(0);
+				transform: scale(1,1) translate(0,2rem) rotateY(0);
+	}
+	.content .conBox .con .bSlide .ani .show div{
+		position: absolute;
+		height: .2rem;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		background: url('../images/bSlide.png') no-repeat center;
+		-webkit-background-size: 100% 100%;
+				background-size: 100% 100%;
+		-webkit-animation-duration: 1.8s;
+				animation-duration: 1.8s;
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+	}
+	.content .conBox .con .bSlide .ani .show div:nth-of-type(1){
+		top: 0;
+	}
+	.content .conBox .con .bSlide .ani .show div:nth-of-type(2){
+		top: .15rem;
+		-webkit-animation-delay: .6s;
+				animation-delay: .6s;
+	}
+	.content .conBox .con .bSlide .ani .show div:nth-of-type(3){
+		top: .3rem;
+		-webkit-animation-delay: 1.2s;
+				animation-delay: 1.2s;
+	}
+	.content .conBox .con.action .bSlide .ani .show div{
+		-webkit-animation-name: bSlideAni;
+				animation-name: bSlideAni;
+	}
+	@-webkit-keyframes bSlideAni{
+		0%{
+			opacity: 0;
+			-webkit-transform: translateY(0);
+		}
+		25%{
+			opacity: 1;
+			-webkit-transform: translateY(.01rem);
+		}
+		50%{
+			opacity: 0;
+			-webkit-transform: translateY(0);
+		}
+		75%{
+			opacity: 1;
+			-webkit-transform: translateY(.01rem);
+		}
+		100%{
+			opacity: 0;
+			-webkit-transform: translateY(0);
+		}
+	}
+	@keyframes bSlideAni{
+		0%{
+			opacity: 0;
+			transform: translateY(0);
+		}
+		25%{
+			opacity: 1;
+			transform: translateY(.01rem);
+		}
+		50%{
+			opacity: 0;
+			transform: translateY(0);
+		}
+		75%{
+			opacity: 1;
+			transform: translateY(.01rem);
+		}
+		100%{
+			opacity: 0;
+			transform: translateY(0);
+		}
+	}
+
+/* 标题 */
+	.conBox .public .title h6{
+		font-size: .3rem;
+		line-height: 1rem;
+		text-indent: .25rem;
+		color: #fff;
+		opacity: 0;
+		-webkit-animation-duration: .8s;
+				animation-duration: .8s;
+		-webkit-animation-delay: .3s;
+				animation-delay: .3s;
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+		-webkit-transform: translateX(1rem);
+				transform: translateX(1rem);
+	}
+	.public.action  .title h6{
+		-webkit-animation-name: titleAni;
+				animation-name: titleAni;
+	}
+	@-webkit-keyframes titleAni{
+		100%{
+			opacity: 1;
+			-webkit-transform: translateX(0);
+		}
+	}
+	@keyframes titleAni{
+		100%{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+/* 文本框背景A */
+	.conBox .public .txtBoxA{
+		position: absolute;
+		left: .8rem;
+		right: .5rem;
+	}
+	.conBox .public .txtBoxA .ani .show{
+		position: relative;
+		padding: .5rem .5rem .4rem;
+		background: url('../images/txtBoxABg.png') no-repeat right;
+		-webkit-background-size: 100% 100%;
+				background-size: 100% 100%;
+	}
+	.conBox .public .txtBoxA .ani .show::before{
+		content: '';
+		position: absolute;
+		left: 2.75rem;
+		top: 0;
+		width: .12rem;
+		height: .12rem;
+		background-color: #73b2ce;
+		border-radius: 50%;
+	}
+	.conBox .public .txtBoxA .ani .show::after{
+		content: '';
+		position: absolute;
+		left: -.2rem;
+		bottom: -.14rem;
+		width: .12rem;
+		height: .12rem;
+		border-radius: 50%;
+		background-color: #fff;
+	}
+	.conBox .public .txtBoxA .ani .show h5{
+		line-height: .36rem;
+		font-size: .25rem;
+		color: #f49e00;
+		text-indent: .48rem;
+		font-weight: bold;
+		padding-bottom: .1rem;
+		-webkit-transform: scale(1,1) translate(0,0) rotateY(0);
+				transform: scale(1,1) translate(0,0) rotateY(0);
+		-webkit-animation-duration: .7s;
+				animation-duration: .7s;
+	}
+	.conBox .public .txtBoxA.t1 .ani .show h5{
+		-webkit-animation-delay: 1.4s;
+				animation-delay: 1.4s;
+	}
+	.conBox .public .txtBoxA.t2 .ani .show h5{
+		-webkit-animation-delay: 1.9s;
+				animation-delay: 1.9s;
+	}
+	.conBox .public .txtBoxA .ani .show h6{
+		line-height: .34rem;
+		font-size: .24rem;
+		color: #fff;
+		text-indent: 2em;
+		text-align: justify;
+		-webkit-transform: scale(1,1) translate(0,0) rotateY(0);
+				transform: scale(1,1) translate(0,0) rotateY(0);
+		-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+	}
+	.conBox .public .txtBoxA.t1 .ani .show h6{
+		-webkit-animation-delay: 1.55s;
+				animation-delay: 1.55s;
+	}
+	.conBox .public .txtBoxA.t2 .ani .show h6{
+		-webkit-animation-delay: 2.05s;
+				animation-delay: 2.05s;
+	}
+	.conBox .public .txtBoxA.t1 .ani .show{
+		-webkit-transform: scale(1,1) translate(-2rem,0) rotateY(0);
+				transform: scale(1,1) translate(-2rem,0) rotateY(0);
+		-webkit-animation-delay: .8s;
+				animation-delay: .8s;
+		-webkit-animation-duration: .6s;
+				animation-duration: .6s;
+	}
+	.conBox .public .txtBoxA.t2 .ani .show{
+		-webkit-transform: scale(1,1) translate(2rem,0) rotateY(0);
+				transform: scale(1,1) translate(2rem,0) rotateY(0);
+		-webkit-animation-delay: 1s;
+				animation-delay: 1s;
+		-webkit-animation-duration: .8s;
+				animation-duration: .8s;
+	}
+
+/* 文本框背景B */
+	.conBox .public .txtBoxB{
+		position: absolute;
+	}
+	.conBox .public .txtBoxB .ani .show{
+		padding: .25rem .7rem .15rem;
+		background: url('../images/txtBoxBBg.png') no-repeat center;
+		-webkit-background-size: 100% 100%;
+				background-size: 100% 100%;
+	}
+	.conBox .public .txtBoxB .ani .show p{
+		font-size: .25rem;
+		line-height: .5rem;
+		text-align: justify;
+		text-indent: 2em;
+		color: #fff;
+	}
+	.conBox .public .txtBoxB .ani .show p span{
+		color: #f49e00;
+	}
+
+/* oTsTop */
+	.conBox .oTs .oTsTop{
+		position: relative;
+		padding-top: .04rem;
+		padding-right: .04rem;
+		width: .54rem;
+		height: .54rem;
+		line-height: .54rem;
+		margin: .45rem auto 0;
+		font-size: .4rem;
+		text-align: center;
+		font-weight: bold;
+		color: #16336f;
+		background: url('../images/oTsTopBg.png') no-repeat center;
+		-webkit-background-size: 100% 100%;
+				background-size: 100% 100%;
+		-webkit-animation-delay: 1.2s;
+				animation-delay: 1.2s;
+		-webkit-transform: scale(1,1) translate(0,0) rotateY(0);
+				transform: scale(1,1) translate(0,0) rotateY(0);
+		-webkit-animation-duration: .8s;
+				animation-duration: .8s;
+	}
+	.conBox .oTs .oTsTop::before,
+	.conBox .oTs .oTsTop::after{
+		content: '';
+		position: absolute;
+		top: .31rem;
+		width: 1.9rem;
+		height: 1px;
+		background-color: #fff;
+	}
+	.conBox .oTs .oTsTop::before{
+		left: -2.1rem;
+	}
+	.conBox .oTs .oTsTop::after{
+		right: -2.06rem;
+	}
+
+	.conBox .oTs .txtBoxB .ani .show{
+		-webkit-animation-duration: .6s;
+				animation-duration: .6s;
+	}
+	.conBox .oTs .txtBoxB.t1 .ani .show{
+		-webkit-transform: scale(1,1) translate(-2rem,0) rotateY(0);
+				transform: scale(1,1) translate(-2rem,0) rotateY(0);
+		-webkit-animation-delay: .8s;
+				animation-delay: .8s;
+	}
+	.conBox .oTs .txtBoxB.t2 .ani .show{
+		-webkit-transform: scale(1,1) translate(2rem,0) rotateY(0);
+				transform: scale(1,1) translate(2rem,0) rotateY(0);
+	}
+
+/* 动画速度曲线 */
+
+	.con.action .getBallAni{
+		-webkit-animation-name: aniBall;
+				animation-name: aniBall;
+	}
+	@-webkit-keyframes aniBall{
+		100%{
+			-webkit-transform: rotate(0);
+		}
+	}
+	@-webkit-keyframes aniBall{
+		100%{
+			-webkit-transform: rotate(0);
+		}
+	}
+	.aniTZ{
+		opacity: 0;
+		-webkit-transform: translateZ(3rem);
+				transform: translateZ(3rem);
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+	}
+	.con.action .getAniTZ{
+		-webkit-animation-name: aniTZ;
+				animation-name: aniTZ;
+	}
+	@-webkit-keyframes aniTZ{
+		100%{
+			opacity: 1;
+			-webkit-transform: translateZ(0);
+		}
+	}
+	@keyframes aniTZ{
+		100%{
+			opacity: 1;
+			transform: translateZ(0);
+		}
+	}
+	.aniLinear{
+		opacity: 0;
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+	}
+	.con.action .getAni{
+		-webkit-animation-name: getAni;
+				animation-name: getAni;
+	}
+	@-webkit-keyframes getAni{
+		100%{
+			opacity: 1;
+			-webkit-transform: scale(1,1) translate(0,0) rotateY(0);
+		}
+	}
+	@keyframes getAni{
+		100%{
+			opacity: 1;
+			transform: scale(1,1) translate(0,0) rotateY(0);
+		}
+	}
+	.con.action .getFall{
+		-webkit-animation-name: getFall;
+				animation-name: getFall;
+	}
+	@-webkit-keyframes getFall{
+		100%{
+			opacity: 1;
+			-webkit-transform: translateZ(0);
+		}
+	}
+	@keyframes getFall{
+		100%{
+			opacity: 1;
+			transform: translateZ(0);
+		}
+	}
